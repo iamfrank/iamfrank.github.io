@@ -23,26 +23,40 @@
             background: linear-gradient(#000, #444);
             color: #fff;
             font: 1em/1.3 sans-serif;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        main {
+            display: grid;
+            grid-template: 15rem 15rem / 15rem 15rem;
         }
 
         .title {
-            text-transform: uppercase;
-            font-size: 4rem;
-            line-height: 1.1;
-            word-spacing: -0.5rem;
-            word-break: break-all;
-            letter-spacing: 1px; 
             padding: 0;
             margin: 0;
-            width: 10rem;
+            display: inline-block;
         }
 
-        #nav {
-            
+        .title span:first-child {
+            display: block;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .title span:last-child {
+            display: block;
+            text-transform: uppercase;
+            font-size: 4rem;
+            line-height: .8;
+            word-spacing: -.33rem;
+            letter-spacing: -.125rem; 
+            width: 9rem;
+            word-break: break-all;
         }
 
         .showcase {
-            display: inline-block;
             height: 15rem;
             width: 15rem;
             background-color: hsl(40,100%,60%);
@@ -53,6 +67,7 @@
             transform: perspective(20rem) translateZ(-5rem);
             text-decoration: none;
             overflow: hidden;
+            box-shadow: 0 .25rem .5rem hsla(0,0%,0%,.66);
         }
 
         .showcase:hover,
@@ -61,44 +76,30 @@
             height: 20rem;
         }
 
-        .showcase:fullscreen {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-        }
-
     </style>
 </head>
 <body>
 
     <main>
 
-        <h1 class="title">I am<br>Frank</h1>
+        <h1 class="title"><span>The web projects of</span><span>I am Frank</span></h1>
 
-        <nav id="nav">
+        <a href="https://iamfrank.github.io/stopwatch/" id="1" class="showcase" style="top: 5rem; left: 5rem; z-index: 3;">
+            <h2>Stopwatch</h2>
+            <p>A javascript stopwatch that counts the minutes and the hours passing by.</p> 
+            <p>Uses localstorage to relentlessly tick along even if you close your browser.</p>
+        </a>
 
-            <a href="https://iamfrank.github.io/stopwatch/" id="1" class="showcase" style="top: 5rem; left: 5rem; z-index: 3;">
-                <h2>Stopwatch</h2>
-                <p>A javascript stopwatch that counts the minutes and the hours passing by.</p> 
-                <p>Uses localstorage to relentlessly tick along even if you close your browser.</p>
-            </a>
-    
-            <a href="https://iamfrank.github.io/semstrap/" id="2" class="showcase" style="top: 5rem; left: 25rem; z-index: 2;">
-                <h2>Semstrap</h2>
-                <p>A CSS framework for styling good, clean semantic HTML</p>
-                <p>No javascript and no class bloat.</p>
-            </a>
-    
-            <a href="https://iamfrank.github.io/superkopf/" id="3" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
-                <h2>Superkopf</h2>
-                <p>A javascript puzzle game.</p>
-            </a>
-    
-        </nav>
+        <a href="https://iamfrank.github.io/semstrap/" id="2" class="showcase" style="top: 5rem; left: 25rem; z-index: 2;">
+            <h2>Semstrap</h2>
+            <p>A CSS framework for styling good, clean semantic HTML</p>
+            <p>No javascript and no class bloat.</p>
+        </a>
+
+        <a href="https://iamfrank.github.io/superkopf/" id="3" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
+            <h2>Superkopf</h2>
+            <p>A javascript puzzle game.</p>
+        </a>
 
     </main>
 
