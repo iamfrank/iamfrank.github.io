@@ -29,13 +29,20 @@
         }
 
         main {
-            display: grid;
-            grid-template: 15rem 15rem / 15rem 15rem;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            max-width: 45rem;
+        }
+
+        main > * {
+            flex: 0 0 15rem;
         }
 
         .title {
-            padding: 3rem;
-            margin: 0 auto;
+            padding: 3rem 2rem;
+            margin: 0;
             display: inline-block;
             position: relative;
         }
@@ -52,10 +59,11 @@
         }
 
         .showcase {
+            border-radius: 2px;
             height: 15rem;
             width: 15rem;
-            background-color: hsl(40,100%,70%);
-            color: #333;
+            background: linear-gradient(hsl(0,66%,50%), hsl(0,66%,45%));
+            color: hsl(0,66%,95%);
             box-shadow: 0 0 .5rem hsla(0,0%,0%,.5);
             padding: 2rem;
             transition: all .3s;
@@ -65,10 +73,27 @@
             box-shadow: 0 .25rem .5rem hsla(0,0%,0%,.66);
         }
 
+        .showcase:nth-child(2) {
+            background: linear-gradient(hsl(0,66%,50%), hsl(0,66%,45%));
+        }
+
+        .showcase:nth-child(3) {
+            background: linear-gradient(hsl(5,50%,50%), hsl(5,50%,45%));
+        }
+
+        .showcase:nth-child(4) {
+            background: linear-gradient(hsl(10,66%,40%), hsl(10,66%,35%));
+            
+        }
+
+        .showcase:nth-child(5) {
+            background: linear-gradient(hsl(0,75%,60%), hsl(0,75%,55%));
+        }
+
         .showcase:hover,
         .showcase:target {
             transform: matrix3d(0.91,-0.09,0.42,0.0005,0.09,1,0.00,0.0001,-0.42,0,0.91,0,0,0,0,1);
-            height: 20rem;
+            
         }
 
     </style>
@@ -82,18 +107,21 @@
         <a href="https://iamfrank.github.io/stopwatch/" id="1" class="showcase" style="top: 5rem; left: 5rem; z-index: 3;">
             <h2>Stopwatch</h2>
             <p>A javascript stopwatch that counts the minutes and the hours passing by.</p> 
-            <p>Uses localstorage to relentlessly tick along even if you close your browser.</p>
         </a>
 
         <a href="https://iamfrank.github.io/semstrap/" id="2" class="showcase" style="top: 5rem; left: 25rem; z-index: 2;">
             <h2>Semstrap</h2>
-            <p>A CSS framework for styling good, clean semantic HTML</p>
-            <p>No javascript and no class bloat.</p>
+            <p>A CSS framework for styling good, clean semantic HTML.</p>
         </a>
 
         <a href="https://iamfrank.github.io/superkopf/" id="3" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
             <h2>Superkopf</h2>
             <p>A javascript puzzle game.</p>
+        </a>
+
+        <a href="https://iamfrank.github.io/location/" id="3" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
+            <h2>Take Me Back&#8482;</h2>
+            <p>Using Web Location API to find your way back to a position.</p>
         </a>
 
     </main>
