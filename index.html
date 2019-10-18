@@ -5,10 +5,109 @@
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <meta name=viewport content="width=device-width,initial-scale=1">
     <title>The web projects of iamfrank</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            padding: 2rem;
+            margin: 0;
+            background: linear-gradient(#000, #444);
+            color: #fff;
+            font: 1em/1.3 sans-serif;
+        }
+
+        .title {
+            text-transform: uppercase;
+            font-size: 4rem;
+            line-height: 1.1;
+            word-spacing: -0.5rem;
+            word-break: break-all;
+            letter-spacing: 1px; 
+            padding: 0;
+            margin: 0;
+            width: 10rem;
+        }
+
+        #nav {
+            
+        }
+
+        .showcase {
+            display: inline-block;
+            height: 15rem;
+            width: 15rem;
+            background-color: hsl(40,100%,60%);
+            color: #333;
+            box-shadow: 0 0 .5rem hsla(0,0%,0%,.5);
+            padding: 2rem;
+            transition: all .3s;
+            transform: perspective(20rem) translateZ(-5rem);
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .showcase:hover,
+        .showcase:target {
+            transform: matrix3d(0.91,-0.09,0.42,0.0005,0.09,1,0.00,0.0001,-0.42,0,0.91,0,0,0,0,1);
+            height: 20rem;
+        }
+
+        .showcase:fullscreen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
 </head>
 <body>
 
-    <h1>Welcome</h1>
+    <main>
+
+        <h1 class="title">I am<br>Frank</h1>
+
+        <nav id="nav">
+
+            <a href="https://iamfrank.github.io/stopwatch/" id="1" class="showcase" style="top: 5rem; left: 5rem; z-index: 3;">
+                <h2>Stopwatch</h2>
+                <p>A javascript stopwatch that counts the minutes and the hours passing by.</p> 
+                <p>Uses localstorage to relentlessly tick along even if you close your browser.</p>
+            </a>
+    
+            <a href="https://iamfrank.github.io/semstrap/" id="2" class="showcase" style="top: 5rem; left: 25rem; z-index: 2;">
+                <h2>Semstrap</h2>
+                <p>A CSS framework for styling good, clean semantic HTML</p>
+                <p>No javascript and no class bloat.</p>
+            </a>
+    
+            <a href="https://iamfrank.github.io/superkopf/" id="3" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
+                <h2>Superkopf</h2>
+                <p>A javascript puzzle game.</p>
+            </a>
+    
+        </nav>
+
+    </main>
+
+
+    <script>
+        
+
+
+    </script>
 
 </body>
 </html>
