@@ -13,14 +13,14 @@
 
         html,
         body {
-            height: 100%;
-            width: 100%;
+            min-height: 100%;
+            min-width: 100%;
         }
 
         body {
             padding: 6rem 2rem 2rem;
             margin: 0;
-            background: linear-gradient(#000, #444);
+            background: linear-gradient(hsl(20,100%,60%), hsl(20,80%,50%));
             color: #fff;
             font: 1em/1.3 sans-serif;
             display: flex;
@@ -34,66 +34,57 @@
             align-items: flex-start;
             justify-content: flex-start;
             max-width: 45rem;
+            margin: 0 auto;
         }
 
         main > * {
-            flex: 0 0 15rem;
+            flex: 1 0 15rem;
         }
 
-        .title {
-            padding: 3rem 2rem;
-            margin: 0;
-            display: inline-block;
-            position: relative;
-        }
+        a,
+        a:link,
+        a:visited {
+            color: #fff;
 
-        .title span:first-child {
-            display: block;
-            text-transform: uppercase;
-            font-size: 4rem;
-            line-height: .8;
-            word-spacing: -.33rem;
-            letter-spacing: -.125rem; 
-            width: 9rem;
-            word-break: break-all;
         }
 
         .showcase {
             border-radius: 2px;
             height: 15rem;
             width: 15rem;
-            background: linear-gradient(hsl(0,66%,50%), hsl(0,66%,45%));
+            background-color: hsl(20,80%,50%);
             color: hsl(0,66%,95%);
-            box-shadow: 0 0 .5rem hsla(0,0%,0%,.5);
             padding: 2rem;
             transition: all .3s;
             transform: perspective(20rem) translateZ(-2.5rem);
             text-decoration: none;
             overflow: hidden;
-            box-shadow: 0 .25rem .5rem hsla(0,0%,0%,.66);
+            margin: 0;
         }
 
-        .showcase:nth-child(2) {
-            background: linear-gradient(hsl(0,66%,50%), hsl(0,66%,45%));
+        a.showcase {
+            background-color: hsl(20,100%,60%);
+            box-shadow: 0 .25rem .5rem hsla(20,80%,25%,.5);
         }
 
-        .showcase:nth-child(3) {
-            background: linear-gradient(hsl(5,50%,50%), hsl(5,50%,45%));
-        }
-
-        .showcase:nth-child(4) {
-            background: linear-gradient(hsl(10,66%,40%), hsl(10,66%,35%));
-            
-        }
-
-        .showcase:nth-child(5) {
-            background: linear-gradient(hsl(0,75%,60%), hsl(0,75%,55%));
-        }
-
-        .showcase:hover,
-        .showcase:target {
+        a.showcase:hover,
+        a.showcase:target {
             transform: matrix3d(0.91,-0.09,0.42,0.0005,0.09,1,0.00,0.0001,-0.42,0,0.91,0,0,0,0,1);
-            
+        }
+
+        .title {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            position: relative;
+            display: block;
+            text-transform: uppercase;
+            font-size: 6rem;
+            line-height: .8;
+            word-spacing: -.33rem;
+            letter-spacing: -.125rem; 
+            word-break: break-all;
+            background-color: transparent;
         }
 
     </style>
@@ -102,28 +93,42 @@
 
     <main>
 
-        <h1 class="title"><span>I am Frank</span></h1>
+        <h1 class="title showcase">I am<br>Fra<br>nk</h1>
 
-        <a href="https://iamfrank.github.io/stopwatch/" id="1" class="showcase" style="top: 5rem; left: 5rem; z-index: 3;">
+        <p class="showcase">
+            Various web projects portfolio.<br>
+            <a href="https://github.com/iamfrank/">Get in touch on Github</a>
+        </p>
+
+        <a href="https://iamfrank.github.io/stopwatch/" id="1" class="showcase">
             <h2>Stopwatch</h2>
-            <p>A javascript stopwatch that counts the minutes and the hours passing by.</p> 
+            <p>A Javascript stopwatch that counts the minutes and the hours passing by.</p>
         </a>
 
-        <a href="https://iamfrank.github.io/semstrap/" id="2" class="showcase" style="top: 5rem; left: 25rem; z-index: 2;">
+        <a href="https://iamfrank.github.io/semstrap/" id="2" class="showcase">
             <h2>Semstrap</h2>
             <p>A CSS framework for styling good, clean semantic HTML.</p>
         </a>
 
-        <a href="https://iamfrank.github.io/superkopf/" id="3" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
+        <a href="https://iamfrank.github.io/sounds/" id="3" class="showcase">
+            <h2>Sounds</h2>
+            <p>A tiny music keyboard written in Javascript</p>
+        </a>
+
+        <p class="showcase">
+            Spread the love
+        </p>
+<!--
+        <a href="https://iamfrank.github.io/superkopf/" id="4" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
             <h2>Superkopf</h2>
             <p>A javascript puzzle game.</p>
         </a>
 
-        <a href="https://iamfrank.github.io/location/" id="3" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
+        <a href="https://iamfrank.github.io/location/" id="5" class="showcase" style="top: 25rem; left: 5rem; z-index: 1;">
             <h2>Take Me Back&#8482;</h2>
             <p>Using Web Location API to find your way back to a position.</p>
         </a>
-
+-->
     </main>
 
 
