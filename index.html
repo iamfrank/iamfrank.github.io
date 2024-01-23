@@ -1,142 +1,55 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-    <meta charset=utf-8>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport content="width=device-width,initial-scale=1">
-    <title>The web projects of iamfrank</title>
-    <style>
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            min-height: 100%;
-            min-width: 100%;
-        }
-
-        body {
-            padding: 6rem 2rem 2rem;
-            margin: 0;
-            background: linear-gradient(hsl(20,100%,60%), hsl(20,80%,50%));
-            color: #fff;
-            font: 1em/1.3 sans-serif;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-        }
-
-        main {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start;
-            justify-content: flex-start;
-            max-width: 45rem;
-            margin: 0 auto;
-        }
-
-        main > * {
-            flex: 1 0 15rem;
-        }
-
-        a,
-        a:link,
-        a:visited {
-            color: #fff;
-
-        }
-
-        .showcase {
-            border-radius: 2px;
-            height: 15rem;
-            width: 15rem;
-            background-color: hsl(20,80%,50%);
-            color: hsl(0,66%,95%);
-            padding: 2rem;
-            transition: all .3s;
-            transform: perspective(20rem) translateZ(-2.5rem);
-            text-decoration: none;
-            overflow: hidden;
-            margin: 0;
-        }
-
-        a.showcase {
-            background-color: hsl(20,100%,60%);
-            box-shadow: 0 .25rem .5rem hsla(20,80%,25%,.5);
-        }
-
-        a.showcase:hover,
-        a.showcase:target {
-            transform: matrix3d(0.91,-0.09,0.42,0.0005,0.09,1,0.00,0.0001,-0.42,0,0.91,0,0,0,0,1);
-        }
-
-        .title {
-            padding: 0;
-            margin: 0;
-            display: inline-block;
-            position: relative;
-            display: block;
-            text-transform: uppercase;
-            font-size: 6rem;
-            line-height: .8;
-            word-spacing: -.33rem;
-            letter-spacing: -.125rem; 
-            word-break: break-all;
-            background-color: transparent;
-        }
-
-    </style>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>The web projects of iamfrank</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    <main>
+  <main>
 
-        <h1 class="title showcase">I am<br>Fra<br>nk</h1>
+    <h1 class="title showcase">I am<br>Fra<br>nk</h1>
 
-        <p class="showcase">
-            Various web projects portfolio.<br>
-            <a href="https://github.com/iamfrank/">Get in touch on Github</a>
-        </p>
+    <p class="showcase">
+      Various web projects portfolio.<br>
+      <a href="https://github.com/iamfrank/">Get in touch on Github</a>
+    </p>
 
-        <a href="https://iamfrank.github.io/joydiv/" id="0" class="showcase">
-            <h2>JoyDiv</h2>
-            <p>Using Javascript audio API to make an interactive poster in the style of Joy Division's Unknown Pleasures cover.</p>
-        </a>
+    <a href="https://iamfrank.github.io/joydiv/" id="case0" class="showcase">
+      <h2>JoyDiv</h2>
+      <p>Using Javascript audio API to make an interactive poster in the style of Joy Division's Unknown Pleasures cover.</p>
+    </a>
 
-        <a href="https://iamfrank.github.io/timer/" id="1" class="showcase">
-            <h2>Stopwatch</h2>
-            <p>A stopwatch and HIIT workout timer made with Javascript web components.</p>
-        </a>
+    <a href="https://iamfrank.github.io/timer/" id="case1" class="showcase">
+      <h2>Stopwatch</h2>
+      <p>A stopwatch and workout timer made with Javascript web components.</p>
+    </a>
 
-        <a href="https://iamfrank.github.io/semstrap/" id="2" class="showcase">
-            <h2>Semstrap</h2>
-            <p>A CSS framework for styling good, clean semantic HTML.</p>
-        </a>
+    <a href="https://iamfrank.github.io/location/" id="case5" class="showcase">
+      <h2>Location</h2>
+      <p>A tiny map application that can pinpoint your location using Web Geolocation API.</p>
+    </a>
 
-        <a href="https://iamfrank.github.io/sounds/" id="3" class="showcase">
-            <h2>Sounds</h2>
-            <p>A tiny music keyboard written in Javascript</p>
-        </a>
+    <a href="https://iamfrank.github.io/sounds/" id="case3" class="showcase">
+      <h2>Sounds</h2>
+      <p>A tiny music keyboard written in Javascript</p>
+    </a>
 
-        <a href="https://iamfrank.github.io/superkopf/" id="4" class="showcase">
-            <h2>Superkopf</h2>
-            <p>A logical puzzle game implementing Javascript web components</p>
-        </a>
+    <a href="https://iamfrank.github.io/superkopf/" id="case4" class="showcase">
+      <h2>Superkopf</h2>
+      <p>A logical puzzle game implementing Javascript web components</p>
+    </a>
 
-        <p class="showcase">
-            Spread the love
-        </p>
-
-    </main>
-
-
-    <script>
+    <p class="showcase">
         
+    </p>
 
+  </main>
 
-    </script>
+  <script src="main.js"></script>
 
 </body>
 </html>
