@@ -5,6 +5,5 @@ function generateRandomColor() {
 const cases = document.querySelectorAll('a.showcase')
 
 for (let c of cases) {
-  console.log('case!', c)
   c.style.backgroundColor = `hsl(${generateRandomColor()},80%,40%)`
 }
