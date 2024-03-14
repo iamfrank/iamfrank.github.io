@@ -1,9 +1,9 @@
-function generateRandomColor() {
-  return Math.floor(Math.random() * 300)
+function generateRandomDelay() {
+  return Math.floor(Math.random() * 6)
 }
 
 const cases = document.querySelectorAll('a.showcase')
 
 for (let c of cases) {
-  c.style.backgroundColor = `hsl(${generateRandomColor()},80%,40%)`
+  c.style.animationDelay = `${generateRandomDelay()}s`
 }
